@@ -1,0 +1,35 @@
+@use "./variables" as *;
+
+html {
+    // setting  base font size to 20px;
+    font-size: 125%;
+}
+
+// stripping styles
+body,
+section,
+ul,
+h1,
+h2,
+h3,
+h4,
+h5 {
+    margin:0;
+    padding:0;
+    list-style: none;
+}
+
+p,
+article {
+    font-family: $secondaryFont, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+button,
+nav {
+    font-family: $primaryFont, sans-serif;
+}
