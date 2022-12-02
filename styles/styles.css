@@ -357,3 +357,72 @@ button {
   max-width: 1600px;
   margin: 0 auto;
 }
+
+header {
+  height: calc(100vh - 80px);
+  background-image: url("../assets/home-1.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+}
+
+.brandingDesign {
+  background-color: #c3dab7;
+  padding: 10% 0%;
+}
+.brandingDesign .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.brandingDesign .wrapper .brandingDesignImage {
+  position: relative;
+}
+.brandingDesign .wrapper .brandingDesignImage .circleText {
+  position: absolute;
+  width: 40%;
+  height: auto;
+  top: -75px;
+  left: -75px;
+}
+.brandingDesign .wrapper .brandingDesignText {
+  margin-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  text-align: center;
+}
+.brandingDesign .wrapper .brandingDesignText .brandingTextBox {
+  width: 40%;
+}
+
+.ecosystem {
+  background-color: #ffffff;
+}
+.ecosystem .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.ecosystem .wrapper img {
+  width: 25%;
+  height: auto;
+  border-radius: 50%;
+}
