@@ -408,6 +408,7 @@ header {
 
 .ecosystem {
   background-color: #ffffff;
+  padding: 10% 0%;
 }
 .ecosystem .wrapper {
   display: -webkit-box;
@@ -420,9 +421,57 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: relative;
 }
 .ecosystem .wrapper img {
-  width: 25%;
+  width: 225px;
   height: auto;
   border-radius: 50%;
+  margin-bottom: 50px;
+}
+.ecosystem .wrapper img::before {
+  content: url("../assets/chevron-left.svg");
+  position: absolute;
+  left: 0;
+}
+.ecosystem .wrapper img::after {
+  content: url("../assets/chevron-right.svg");
+  position: absolute;
+  right: 0;
+}
+.ecosystem .wrapper article {
+  width: 45%;
+  text-align: center;
+  font-style: italic;
+}
+
+.pointsOfDifference {
+  background-image: url("../assets/home-4.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 10% 0%;
+}
+.pointsOfDifference .wrapper {
+  width: 50%;
+  margin: 0 0 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.pointsOfDifference .wrapper .pod {
+  width: 35%;
+  position: relative;
+  margin: 20px 30px 20px 30px;
+}
+.pointsOfDifference .wrapper .pod i {
+  position: absolute;
+  left: -60px;
+  top: 20px;
+}
+.pointsOfDifference .wrapper .pod i.fa-solid {
+  left: -50px;
+  top: 30px;
 }
