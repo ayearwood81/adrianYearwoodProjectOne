@@ -248,12 +248,112 @@ article {
   font-family: "Open Sans", sans-serif;
 }
 
+nav,
+a,
+p,
+article {
+  font-size: 0.7rem;
+  color: #333333;
+}
+
+a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: "Montserrat";
+}
+
 h1,
 h2,
 h3,
 h4,
 h5,
 button,
-nav {
+input {
   font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  color: #333333;
+}
+
+input {
+  text-transform: none;
+}
+
+h1 {
+  font-size: 1.85rem;
+  line-height: 24px;
+  letter-spacing: 1.8px;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 0.9rem;
+  font-weight: normal;
+  line-height: 24px;
+  letter-spacing: 1.8px;
+}
+
+h3 {
+  font-size: 0.8rem;
+  font-weight: normal;
+  line-height: 24px;
+  letter-spacing: 1.8px;
+}
+
+button {
+  font-size: 0.7rem;
+  font-weight: bold;
+  color: #333333;
+  line-height: 24px;
+  letter-spacing: 0.7px;
+}
+
+.navBar {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background-color: #f6f6f6;
+  height: auto;
+}
+.navBar .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 80px;
+}
+.navBar .wrapper .pageLinks {
+  width: 25%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.navBar .wrapper .searchCart {
+  width: 25%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.navBar .wrapper .searchCart button {
+  background-color: transparent;
+  border-style: none;
+}
+
+.wrapper {
+  width: 90%;
+  max-width: 1600px;
+  margin: 0 auto;
 }
