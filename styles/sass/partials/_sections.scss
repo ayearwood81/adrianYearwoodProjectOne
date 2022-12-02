@@ -102,3 +102,36 @@ header {
         }
     }
 }
+
+.ourTeam {
+    background-color: $whiteOne;
+    padding:5% 0%;
+    h2 {
+        text-align: center;
+        margin: 5% 0%;
+    }
+    .wrapper {
+        display:flex;
+        justify-content: space-between;
+        flex-wrap:wrap;
+    }
+    .teamPlayers {
+        width: calc(50% - 20px);
+        background-color: $whiteTwo;
+        display:flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        padding: 25px;
+    }
+    img {
+        width: calc(25% - 25px);
+        margin:15px 0px;
+    }
+    .workFlex {
+        width: calc(25% - 25px);
+        text-align: center;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
