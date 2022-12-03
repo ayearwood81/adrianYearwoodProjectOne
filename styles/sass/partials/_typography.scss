@@ -82,3 +82,20 @@ button {
     line-height: 24px;
     letter-spacing: 0.7px;
 }
+
+.bottomNav {
+    h3,
+    p,
+    a {
+        color: $whiteOne;
+    }
+    .contactInfo {
+        p {
+            line-height: 10px;
+        }
+    }
+    .recentPosts {
+        color: $whiteOne;
+        list-style:disc;
+    }
+}

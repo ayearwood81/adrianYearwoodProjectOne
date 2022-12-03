@@ -307,6 +307,19 @@ button {
   letter-spacing: 0.7px;
 }
 
+.bottomNav h3,
+.bottomNav p,
+.bottomNav a {
+  color: #ffffff;
+}
+.bottomNav .contactInfo p {
+  line-height: 10px;
+}
+.bottomNav .recentPosts {
+  color: #ffffff;
+  list-style: disc;
+}
+
 .navBar {
   position: sticky;
   top: 0;
@@ -567,4 +580,38 @@ header {
 .dropLine img {
   width: 50%;
   height: auto;
+}
+
+.contact {
+  background-color: #333333;
+  padding: 5% 0%;
+}
+.contact .bottomNav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+}
+.contact .bottomNav h3 {
+  margin-bottom: 30px;
+}
+.contact .bottomNav form {
+  margin-top: 40px;
+}
+.contact .bottomNav .recentPosts h3 {
+  text-align: center;
+}
+.contact .bottomNav .twitterWidget {
+  text-align: right;
+}
+.contact .bottomNav .socialLinks {
+  position: absolute;
+  left: 0;
+  bottom: -20px;
+}
+.contact .bottomNav .socialLinks a {
+  margin-right: 10px;
 }
