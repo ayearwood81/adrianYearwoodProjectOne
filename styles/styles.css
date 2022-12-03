@@ -354,7 +354,7 @@ button {
 
 .wrapper {
   width: 90%;
-  max-width: 1600px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
@@ -475,6 +475,16 @@ header {
   left: -50px;
   top: 30px;
 }
+.pointsOfDifference .wrapper .pod i.fa-map-pin {
+  left: -47px;
+}
+.pointsOfDifference .wrapper .pod i.fa-display {
+  top: 31px;
+  left: -51px;
+}
+.pointsOfDifference .wrapper .pod i.fa-bag-shopping {
+  left: -49px;
+}
 
 .ourTeam {
   background-color: #ffffff;
@@ -525,4 +535,36 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.dropLine {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #c3dab7;
+}
+.dropLine .dropLineInfo {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0% 15%;
+  text-align: center;
+}
+.dropLine .dropLineInfo p {
+  margin: 35px 0px;
+}
+.dropLine img {
+  width: 50%;
+  height: auto;
 }
