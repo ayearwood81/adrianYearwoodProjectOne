@@ -266,12 +266,15 @@ h1,
 h2,
 h3,
 h4,
-h5,
 button,
 input {
   font-family: "Montserrat", sans-serif;
   text-transform: uppercase;
   color: #333333;
+}
+
+h4 {
+  color: #ffffff;
 }
 
 input {
@@ -297,6 +300,13 @@ h3 {
   font-weight: normal;
   line-height: 24px;
   letter-spacing: 1.8px;
+}
+
+h4 {
+  font-size: 0.8rem;
+  font-weight: normal;
+  line-height: 24px;
+  letter-spacing: 7px;
 }
 
 button {
@@ -614,4 +624,11 @@ header {
 }
 .contact .bottomNav .socialLinks a {
   margin-right: 10px;
+}
+
+footer {
+  background-color: #333333;
+  text-align: center;
+  padding: 4% 0%;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
 }
