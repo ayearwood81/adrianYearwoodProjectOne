@@ -349,6 +349,9 @@ button {
           align-items: center;
   height: 80px;
 }
+.navBar .wrapper .homeLink {
+  text-decoration: line-through;
+}
 .navBar .wrapper .pageLinks {
   width: 25%;
   display: -webkit-box;
@@ -452,15 +455,22 @@ header {
   border-radius: 50%;
   margin-bottom: 50px;
 }
-.ecosystem .wrapper img::before {
-  content: url("../assets/chevron-left.svg");
+.ecosystem .wrapper button {
   position: absolute;
-  left: 0;
+  border-style: hidden;
+  background-color: #ffffff;
 }
-.ecosystem .wrapper img::after {
-  content: url("../assets/chevron-right.svg");
-  position: absolute;
-  right: 0;
+.ecosystem .wrapper button img {
+  width: 50px;
+  height: auto;
+}
+.ecosystem .wrapper .left {
+  left: 0px;
+  bottom: 75px;
+}
+.ecosystem .wrapper .right {
+  right: 0px;
+  bottom: 75px;
 }
 .ecosystem .wrapper article {
   width: 45%;
@@ -587,6 +597,11 @@ header {
 .dropLine .dropLineInfo p {
   margin: 35px 0px;
 }
+.dropLine .dropLineInfo button {
+  background-color: #ffffff;
+  border-style: none;
+  padding: 3%;
+}
 .dropLine img {
   width: 50%;
   height: auto;
@@ -616,6 +631,22 @@ header {
 }
 .contact .bottomNav .twitterWidget {
   text-align: right;
+}
+.contact .bottomNav .twitterWidget label[for=email] {
+  display: none;
+}
+.contact .bottomNav .twitterWidget input[type=email] {
+  height: 40px;
+  margin-right: -5px;
+  border-style: none;
+}
+.contact .bottomNav .twitterWidget button {
+  background-color: #c3dab7;
+  color: #333333;
+  border-width: 0;
+  font-size: 1rem;
+  text-align: center;
+  padding: 6px 10px 10px 10px;
 }
 .contact .bottomNav .socialLinks {
   position: absolute;

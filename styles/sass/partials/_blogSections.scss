@@ -1,0 +1,14 @@
+.wrapper {
+    width:90%;
+    max-width: 1200px;
+    margin:0 auto;
+}
+
+header {
+    height: calc(100vh - 80px);
+    background-image: url("../assets/blog-1.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+}
+

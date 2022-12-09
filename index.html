@@ -7,15 +7,15 @@
     <link rel="stylesheet" href="./styles/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/20f6daffc4.js" crossorigin="anonymous"></script>
-    <title>Creative</title>
+    <title>Creative Home</title>
 </head>
 <body>
     <nav class="navBar">
         <div class="wrapper">
             <div class="pageLinks">
-                <a href="#">home</a>
-                <a href="#">blog</a>
-                <a href="#">portfolio</a>
+                <a class="homeLink" href="#">home</a>
+                <a href="./html/blog.html">blog</a>
+                <a href="./html/contact.html">portfolio</a>
             </div>
             <h1>creative</h1>
             <div class="searchCart">
@@ -56,7 +56,13 @@
 
     <section class="ecosystem">
         <div class="wrapper">
+            <button class="chevron left">
+                <img src="./assets/chevron-left.svg" alt="chevron left">
+            </button> 
             <img src="./assets/home-3.jpeg" alt="picture of a shirtless man in a magazine next to an article">
+            <button class="chevron right">
+                <img src="./assets/chevron-right.svg" alt="chevron right">
+            </button>
             <article>Ecosystem iPad disruptive social media low hanging fruit stealth launch party handshake market branding. Pitch agile development business plan stealth channels prototype mass market product management value proposition startup strategy. Product management early adopters user experience metrics advisor gamification responsive web design hackathon termsheet backing series.</article>
         </div>
     </section>
@@ -176,7 +182,7 @@
                     <form action="#" class="emailForm" name="emailForm">
                         <label for="email">Email Entry Form</label>
                         <input id="email" type="email" placeholder="Enter your email">
-                        <button type="submit">arrow</button>
+                        <button type="submit"><i class="fa-sharp fa-solid fa-arrow-right"></i></button>
                     </form>
                 </div>
 

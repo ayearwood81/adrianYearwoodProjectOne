@@ -56,16 +56,23 @@ header {
             height:auto;
             border-radius: 50%;
             margin-bottom: 50px;
-            &::before {
-                content: url("../assets/chevron-left.svg");
-                position:absolute;
-                left:0;
+        }
+        button {
+            position:absolute;
+            border-style: hidden;
+            background-color: $whiteOne;
+            img {
+                width:50px;
+                height:auto;
             }
-            &::after {
-                content: url("../assets/chevron-right.svg");
-                position:absolute;
-                right:0;                
-            }
+        }
+        .left {
+            left:0px;
+            bottom:75px;
+        }
+        .right {
+            right:0px;
+            bottom:75px;
         }
         article {
             width:45%;
@@ -160,6 +167,11 @@ header {
         p {
             margin: 35px 0px;
         }
+        button {
+            background-color: $whiteOne;
+            border-style: none;
+            padding:3%;
+        }
     }
     img {
         width:50%;
@@ -188,6 +200,22 @@ header {
         .twitterWidget
         {
             text-align: right;
+            label[for="email"] {
+                display:none;
+            }
+            input[type="email"] {
+                height:40px;
+                margin-right:-5px;
+                border-style: none;
+            }
+            button {
+                background-color: $green;
+                color:$black;
+                border-width: 0;
+                font-size: 1rem;
+                text-align: center;
+                padding: 6px 10px 10px 10px;
+            }
         }
         .socialLinks {
             position:absolute;
