@@ -315,7 +315,8 @@ h2,
 h3,
 h4,
 button,
-input {
+input,
+textarea {
   font-family: "Montserrat", sans-serif;
   text-transform: uppercase;
   color: #333333;
@@ -325,7 +326,8 @@ h4 {
   color: #ffffff;
 }
 
-input {
+input,
+textarea {
   text-transform: none;
 }
 
@@ -390,4 +392,240 @@ header {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom;
+}
+
+.mainBlog {
+  margin: 5% 0%;
+}
+.mainBlog h2 {
+  text-transform: uppercase;
+  font-size: 3rem;
+  line-height: normal;
+  font-weight: bolder;
+}
+.mainBlog a {
+  text-transform: capitalize;
+  color: rgba(51, 51, 51, 0.5);
+}
+.mainBlog .postInfoFlex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-bottom: 1px solid rgba(51, 51, 51, 0.5);
+  padding: 10px 0px;
+  margin-bottom: 50px;
+}
+.mainBlog .postInfoFlex img {
+  border-radius: 50%;
+}
+.mainBlog .postInfoFlex .nameTitle {
+  width: 40%;
+}
+.mainBlog .postInfoFlex .date {
+  width: 15%;
+}
+.mainBlog .postInfoFlex .category {
+  width: 15%;
+}
+.mainBlog .postInfoFlex .tags {
+  width: 15%;
+}
+.mainBlog .postInfoFlex .top {
+  text-transform: uppercase;
+  margin-bottom: 4px;
+}
+.mainBlog .postInfoFlex .bottom {
+  text-transform: capitalize;
+  color: rgba(51, 51, 51, 0.5);
+  margin-top: 4px;
+  font-size: 0.6rem;
+}
+.mainBlog .blog article {
+  color: rgba(51, 51, 51, 0.5);
+}
+.mainBlog .blog span {
+  color: #333333;
+  font-weight: bold;
+}
+.mainBlog .share {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-transform: uppercase;
+}
+.mainBlog .share p {
+  margin-right: 10px;
+}
+.mainBlog .share a {
+  color: #333333;
+  margin: 0px 10px;
+}
+
+.relatedPosts h3 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgba(51, 51, 51, 0.5);
+  margin-bottom: 50px;
+}
+.relatedPosts .gallery {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  text-transform: uppercase;
+}
+
+.oldComments {
+  margin: 5% 0%;
+}
+.oldComments h3 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgba(51, 51, 51, 0.5);
+  margin-bottom: 50px;
+}
+.oldComments .commentImage {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 10px;
+}
+.oldComments .commentImage img {
+  height: 60px;
+  width: 60px;
+  margin-right: 50px;
+}
+.oldComments .commentImage .commentInfo {
+  background-color: #f6f6f6;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  padding: 1% 2%;
+}
+.oldComments .commentImage .commentInfo .commentName {
+  text-transform: uppercase;
+}
+.oldComments .commentImage .commentInfo .commentName span {
+  text-transform: capitalize;
+  font-style: italic;
+}
+.oldComments .commentImage .commentInfo .commentTimeDate {
+  font-size: 0.6rem;
+  color: rgba(51, 51, 51, 0.5);
+}
+
+.newComment h3 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgba(51, 51, 51, 0.5);
+  margin-bottom: 50px;
+}
+.newComment form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.newComment form label[for=name],
+.newComment form label[for=email],
+.newComment form label[for=subject],
+.newComment form label[for=comment] {
+  display: none;
+}
+.newComment form input[type=text],
+.newComment form input[type=email] {
+  width: 30%;
+  padding-bottom: 10px;
+  border: none;
+  border-bottom: 1px solid rgba(51, 51, 51, 0.5);
+}
+.newComment form input[type=email] {
+  border-bottom: 1px solid #333333;
+}
+.newComment form textarea {
+  width: 100%;
+  padding-bottom: 10px;
+  margin-bottom: 50px;
+  resize: none;
+  border: none;
+  border-bottom: 1px solid rgba(51, 51, 51, 0.5);
+}
+.newComment form button {
+  border: none;
+  border-bottom: 1px solid #333333;
+  background-color: #ffffff;
+  font-weight: normal;
+}
+
+.contact {
+  background-color: #333333;
+  padding: 5% 0%;
+  margin-top: 10%;
+}
+.contact .bottomNav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+}
+.contact .bottomNav h3 {
+  margin-bottom: 30px;
+}
+.contact .bottomNav form {
+  margin-top: 40px;
+}
+.contact .bottomNav .recentPosts h3 {
+  text-align: center;
+}
+.contact .bottomNav .twitterWidget {
+  text-align: right;
+}
+.contact .bottomNav .twitterWidget label[for=email] {
+  display: none;
+}
+.contact .bottomNav .twitterWidget input[type=email] {
+  height: 40px;
+  margin-right: -5px;
+  border-style: none;
+}
+.contact .bottomNav .twitterWidget button {
+  background-color: #c3dab7;
+  color: #333333;
+  border-width: 0;
+  font-size: 1rem;
+  text-align: center;
+  padding: 6px 10px 10px 10px;
+}
+.contact .bottomNav .socialLinks {
+  position: absolute;
+  left: 0;
+  bottom: -20px;
+}
+.contact .bottomNav .socialLinks a {
+  margin-right: 10px;
+}
+
+footer {
+  background-color: #333333;
+  text-align: center;
+  padding: 4% 0%;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
 }
