@@ -745,6 +745,12 @@ footer {
     top: 0;
     left: 0;
   }
+  .brandingDesign .wrapper .brandingDesignText .brandingTextBox h2 {
+    font-size: 0.7rem;
+  }
+  .brandingDesign .wrapper .brandingDesignText .brandingTextBox p {
+    font-size: 0.6rem;
+  }
   .ecosystem .wrapper article {
     width: 70%;
   }
