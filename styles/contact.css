@@ -387,151 +387,80 @@ button {
 }
 
 header {
-  height: calc(100vh - 80px);
-  background-image: url("../assets/blog-1.jpeg");
+  height: calc(50vh - 80px);
+  background-image: url("../assets/contact-1.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom;
 }
 
-.mainBlog {
-  margin: 5% 0%;
+.details {
+  position: relative;
+  margin: 100px 0px;
 }
-.mainBlog h2 {
-  text-transform: uppercase;
-  font-size: 3rem;
-  line-height: normal;
-  font-weight: bolder;
+.details h2 {
+  position: absolute;
+  font-size: 2.5rem;
+  font-weight: bold;
+  line-height: 40px;
+  width: 10%;
+  top: -150px;
 }
-.mainBlog a {
-  text-transform: capitalize;
+.details h3 {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.details p {
   color: rgba(51, 51, 51, 0.5);
+  line-height: 20px;
 }
-.mainBlog .postInfoFlex {
+.details .detailsInfoFlex {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  border-bottom: 1px solid rgba(51, 51, 51, 0.2);
-  padding: 10px 0px;
-  margin-bottom: 50px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: 4% 0%;
 }
-.mainBlog .postInfoFlex img {
-  border-radius: 50%;
+.details .detailsInfoFlex .phone,
+.details .detailsInfoFlex .address,
+.details .detailsInfoFlex .emailDetails {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
-.mainBlog .postInfoFlex .nameTitle {
-  width: 40%;
-}
-.mainBlog .postInfoFlex .date {
-  width: 15%;
-}
-.mainBlog .postInfoFlex .category {
-  width: 15%;
-}
-.mainBlog .postInfoFlex .tags {
-  width: 15%;
-}
-.mainBlog .postInfoFlex .top {
-  text-transform: uppercase;
-  margin-bottom: 4px;
-}
-.mainBlog .postInfoFlex .bottom {
-  text-transform: capitalize;
-  color: rgba(51, 51, 51, 0.5);
-  margin-top: 4px;
-  font-size: 0.6rem;
-}
-.mainBlog .blog article {
-  color: rgba(51, 51, 51, 0.5);
-}
-.mainBlog .blog span {
+.details .detailsInfoFlex .phone h4,
+.details .detailsInfoFlex .address h4,
+.details .detailsInfoFlex .emailDetails h4 {
   color: #333333;
+  margin-top: 20px;
   font-weight: bold;
 }
-.mainBlog .share {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  text-transform: uppercase;
+.details .detailsInfoFlex .phone p,
+.details .detailsInfoFlex .address p,
+.details .detailsInfoFlex .emailDetails p {
+  margin-bottom: 0;
 }
-.mainBlog .share p {
-  margin-right: 10px;
-}
-.mainBlog .share a {
-  color: #333333;
-  margin: 0px 10px;
+.details .detailsInfoFlex .line {
+  width: 1px;
+  border: 1px solid rgba(51, 51, 51, 0.2);
 }
 
-.relatedPosts h3 {
+.inTouch h3 {
   font-size: 1.2rem;
   font-weight: bold;
   padding-bottom: 10px;
-  border-bottom: 1px solid rgba(51, 51, 51, 0.2);
-  margin-bottom: 50px;
 }
-.relatedPosts .gallery {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  text-transform: uppercase;
-}
-
-.oldComments {
-  margin: 5% 0%;
-}
-.oldComments h3 {
-  font-size: 1.2rem;
-  font-weight: bold;
-  padding-bottom: 10px;
-  border-bottom: 1px solid rgba(51, 51, 51, 0.2);
-  margin-bottom: 50px;
-}
-.oldComments .commentImage {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-bottom: 10px;
-}
-.oldComments .commentImage img {
-  height: 60px;
-  width: 60px;
-  margin-right: 50px;
-}
-.oldComments .commentImage .commentInfo {
-  background-color: #f6f6f6;
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
-  padding: 1% 2%;
-}
-.oldComments .commentImage .commentInfo .commentName {
-  text-transform: uppercase;
-}
-.oldComments .commentImage .commentInfo .commentName span {
-  text-transform: capitalize;
-  font-style: italic;
-}
-.oldComments .commentImage .commentInfo .commentTimeDate {
-  font-size: 0.6rem;
+.inTouch p {
   color: rgba(51, 51, 51, 0.5);
+  margin-bottom: 100px;
 }
-
-.newComment h3 {
-  font-size: 1.2rem;
-  font-weight: bold;
-  padding-bottom: 10px;
-  border-bottom: 1px solid rgba(51, 51, 51, 0.2);
-  margin-bottom: 50px;
-}
-.newComment form {
+.inTouch form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -541,41 +470,48 @@ header {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
-.newComment form label[for=name],
-.newComment form label[for=email],
-.newComment form label[for=subject],
-.newComment form label[for=comment] {
+.inTouch form label[for=name],
+.inTouch form label[for=email],
+.inTouch form label[for=subject],
+.inTouch form label[for=comment] {
   display: none;
 }
-.newComment form input[type=text],
-.newComment form input[type=email] {
+.inTouch form input[type=text],
+.inTouch form input[type=email] {
   width: 30%;
   padding-bottom: 10px;
   border: none;
   border-bottom: 1px solid rgba(51, 51, 51, 0.2);
 }
-.newComment form input[type=email] {
+.inTouch form input[type=email] {
   border-bottom: 1px solid #333333;
 }
-.newComment form textarea {
+.inTouch form textarea {
   width: 100%;
-  padding-bottom: 10px;
+  padding: 30px 0px;
   margin-bottom: 50px;
   resize: none;
   border: none;
   border-bottom: 1px solid rgba(51, 51, 51, 0.2);
 }
-.newComment form button {
+.inTouch form button {
   border: none;
   border-bottom: 1px solid #333333;
   background-color: #ffffff;
   font-weight: normal;
 }
 
+.bottomBanner {
+  background-image: url("../assets/contact-2.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-top: 5%;
+  height: 700px;
+}
+
 .contact {
   background-color: #333333;
   padding: 5% 0%;
-  margin-top: 10%;
 }
 .contact .bottomNav {
   display: -webkit-box;
