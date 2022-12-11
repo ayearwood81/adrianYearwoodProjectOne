@@ -1,11 +1,158 @@
-@media (max-width: 1000px) {
-    /* all of our styles for smaller DESKTOP devices will go within this breakpoint */
+@media (max-width: 800px) {
+  .pageLinks {
+    a {
+      margin-right:10px;
+    }
   }
+
+  .searchCart {
+    a,
+    .searchButtons {
+      margin-left:10px;
+    }
+  }
+
+  .brandingTextBox {
+    p {
+      font-size: 0.65rem;
+    }
+  }
+  .ecosystem {
+    article {
+      font-size: 0.65rem;
+    }
+  }
+  .left {
+    top:40px;
+  }
+  .right {
+    top:40px;
+  }
+
+  .pointsOfDifference {
+    .wrapper {
+      margin: 50px 0 0 auto;
+      width: 60%;
+    }
+    h2 {
+      font-size: 0.6rem;
+    }
+    p {
+      font-size: 0.6rem;
+    }
+  }
+
+  .ourTeam {
+    h3 {
+      font-size: 0.7rem;
+    }
+    p {
+      font-size: 0.65rem;
+    }
+  }
+
+  .dropLine {
+    .dropLineInfo {
+      padding: 0 10%;
+      p {
+        font-size: 0.6rem;
+      }
+    }
+  }
+
+  .contact {
+    p {
+      font-size: 0.6rem;
+    }
+    a {
+      font-size: 0.6rem;
+    }
+  }  
+}
   
-  @media (max-width: 800px) {
-    /* all of our styles for TABLET devices will go within this breakpoint */
+@media (max-width: 500px) {
+  .pageLinks {
+    flex-direction: column;
   }
-  
-  @media (max-width: 500px) {
-    /* all of our styles for MOBILE devices will go within this breakpoint */
+  .searchCart {
+    flex-direction: column;
   }
+  .brandingDesign {
+    .wrapper {
+      .brandingDesignImage{
+        .circleText {
+          width:20%;
+          top:0;
+          left:0;
+        }
+      }
+    }
+  }
+  .ecosystem {
+    .wrapper {
+      article {
+        width:70%;
+      }
+    }
+  }
+
+  .pointsOfDifference {
+    .wrapper {
+      width:40%;
+      .podOne,
+      .podThree,
+      .podFive {
+        display:none;
+      }
+      .pod {
+        width: 100%;
+      }
+    }
+  }
+
+  .ourTeam {
+    .wrapper {
+      flex-direction: column;
+      align-items: center;
+      .teamPlayers {
+        width:100%;
+      }
+      img {
+        width:100%;
+        height:auto;
+      }
+      .workFlex {
+        width:100%;
+      }
+    }
+  }
+
+  .dropLine {
+    height: 300px;
+    .dropLineInfo {
+      justify-content: space-evenly;
+      p {
+        margin:10px;
+      }
+    }
+  }
+
+  .contact {
+    padding-bottom: 10%;
+    .bottomNav {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      h3 {
+        margin-top: 20px;
+      }
+      .twitterWidget {
+        text-align: center;
+      }
+      .socialLinks {
+        left:42%;
+        bottom:-40px;
+      }
+    }
+  }
+}

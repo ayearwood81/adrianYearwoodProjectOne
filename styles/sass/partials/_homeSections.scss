@@ -78,6 +78,7 @@ header {
             width:45%;
             text-align: center;
             font-style: italic;
+            color: $halfBlack;
         }
     }
 }
@@ -97,6 +98,9 @@ header {
             width: 35%;
             position:relative;
             margin: 20px 30px 20px 30px;
+            p {
+                color: $halfBlack;
+            }
             i {
                 position:absolute;
                 left:-60px;
@@ -139,6 +143,9 @@ header {
         flex-direction: column;
         justify-content: flex-end;
         padding: 25px;
+        p {
+            color: $halfBlack;
+        }
     }
     img {
         width: calc(25% - 25px);
@@ -166,6 +173,7 @@ header {
         text-align: center;
         p {
             margin: 35px 0px;
+            color: $halfBlack;
         }
         button {
             background-color: $whiteOne;
@@ -195,6 +203,10 @@ header {
         .recentPosts {
             h3 {
                 text-align: center;
+            }
+            a {
+                text-transform: none;
+                line-height: 25px;
             }
         }
         .twitterWidget

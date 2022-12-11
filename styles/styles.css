@@ -478,6 +478,7 @@ header {
   width: 45%;
   text-align: center;
   font-style: italic;
+  color: rgba(51, 51, 51, 0.5);
 }
 
 .pointsOfDifference {
@@ -500,6 +501,9 @@ header {
   width: 35%;
   position: relative;
   margin: 20px 30px 20px 30px;
+}
+.pointsOfDifference .wrapper .pod p {
+  color: rgba(51, 51, 51, 0.5);
 }
 .pointsOfDifference .wrapper .pod i {
   position: absolute;
@@ -554,6 +558,9 @@ header {
           justify-content: flex-end;
   padding: 25px;
 }
+.ourTeam .teamPlayers p {
+  color: rgba(51, 51, 51, 0.5);
+}
 .ourTeam img {
   width: calc(25% - 25px);
   margin: 15px 0px;
@@ -598,6 +605,7 @@ header {
 }
 .dropLine .dropLineInfo p {
   margin: 35px 0px;
+  color: rgba(51, 51, 51, 0.5);
 }
 .dropLine .dropLineInfo button {
   background-color: #ffffff;
@@ -630,6 +638,10 @@ header {
 }
 .contact .bottomNav .recentPosts h3 {
   text-align: center;
+}
+.contact .bottomNav .recentPosts a {
+  text-transform: none;
+  line-height: 25px;
 }
 .contact .bottomNav .twitterWidget {
   text-align: right;
@@ -664,4 +676,140 @@ footer {
   text-align: center;
   padding: 4% 0%;
   border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+@media (max-width: 800px) {
+  .pageLinks a {
+    margin-right: 10px;
+  }
+  .searchCart a,
+.searchCart .searchButtons {
+    margin-left: 10px;
+  }
+  .brandingTextBox p {
+    font-size: 0.65rem;
+  }
+  .ecosystem article {
+    font-size: 0.65rem;
+  }
+  .left {
+    top: 40px;
+  }
+  .right {
+    top: 40px;
+  }
+  .pointsOfDifference .wrapper {
+    margin: 50px 0 0 auto;
+    width: 60%;
+  }
+  .pointsOfDifference h2 {
+    font-size: 0.6rem;
+  }
+  .pointsOfDifference p {
+    font-size: 0.6rem;
+  }
+  .ourTeam h3 {
+    font-size: 0.7rem;
+  }
+  .ourTeam p {
+    font-size: 0.65rem;
+  }
+  .dropLine .dropLineInfo {
+    padding: 0 10%;
+  }
+  .dropLine .dropLineInfo p {
+    font-size: 0.6rem;
+  }
+  .contact p {
+    font-size: 0.6rem;
+  }
+  .contact a {
+    font-size: 0.6rem;
+  }
+}
+@media (max-width: 500px) {
+  .pageLinks {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .searchCart {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .brandingDesign .wrapper .brandingDesignImage .circleText {
+    width: 20%;
+    top: 0;
+    left: 0;
+  }
+  .ecosystem .wrapper article {
+    width: 70%;
+  }
+  .pointsOfDifference .wrapper {
+    width: 40%;
+  }
+  .pointsOfDifference .wrapper .podOne,
+.pointsOfDifference .wrapper .podThree,
+.pointsOfDifference .wrapper .podFive {
+    display: none;
+  }
+  .pointsOfDifference .wrapper .pod {
+    width: 100%;
+  }
+  .ourTeam .wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .ourTeam .wrapper .teamPlayers {
+    width: 100%;
+  }
+  .ourTeam .wrapper img {
+    width: 100%;
+    height: auto;
+  }
+  .ourTeam .wrapper .workFlex {
+    width: 100%;
+  }
+  .dropLine {
+    height: 300px;
+  }
+  .dropLine .dropLineInfo {
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .dropLine .dropLineInfo p {
+    margin: 10px;
+  }
+  .contact {
+    padding-bottom: 10%;
+  }
+  .contact .bottomNav {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+  }
+  .contact .bottomNav h3 {
+    margin-top: 20px;
+  }
+  .contact .bottomNav .twitterWidget {
+    text-align: center;
+  }
+  .contact .bottomNav .socialLinks {
+    left: 42%;
+    bottom: -40px;
+  }
 }
