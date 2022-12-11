@@ -402,9 +402,9 @@ header {
   position: absolute;
   font-size: 2.5rem;
   font-weight: bold;
-  line-height: 40px;
+  line-height: 60px;
   width: 10%;
-  top: -150px;
+  top: -180px;
 }
 .details h3 {
   font-size: 1rem;
@@ -564,4 +564,100 @@ footer {
   text-align: center;
   padding: 4% 0%;
   border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+@media (max-width: 800px) {
+  .pageLinks a {
+    margin-right: 10px;
+  }
+  .searchCart a,
+.searchCart .searchButtons {
+    margin-left: 10px;
+  }
+  .inTouch form input[type=text],
+.inTouch form input[type=email],
+.inTouch form textarea {
+    font-size: 0.8rem;
+  }
+}
+@media (max-width: 500px) {
+  .pageLinks {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .searchCart {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .details {
+    margin: 5% 0%;
+  }
+  .details h2 {
+    position: relative;
+    font-size: 1.2rem;
+    top: 0;
+    width: 100%;
+    text-align: center;
+    margin: 20px 0px;
+  }
+  .details h3 {
+    font-size: 0.8rem;
+    margin-bottom: 0px;
+  }
+  .details p {
+    font-size: 0.5rem;
+    line-height: normal;
+  }
+  .details .detailsInfoFlex .phone,
+.details .detailsInfoFlex .address,
+.details .detailsInfoFlex .emailDetails {
+    text-align: center;
+  }
+  .inTouch {
+    margin: 30px 0px;
+  }
+  .inTouch h3 {
+    font-size: 0.8rem;
+    padding-bottom: 0px;
+  }
+  .inTouch p {
+    font-size: 0.5rem;
+    line-height: normal;
+    margin-bottom: 50px;
+  }
+  .inTouch form input[type=text],
+.inTouch form input[type=email],
+.inTouch form textarea {
+    font-size: 0.5rem;
+  }
+  .bottomBanner {
+    display: none;
+  }
+  .contact {
+    padding-bottom: 10%;
+  }
+  .contact .bottomNav {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+  }
+  .contact .bottomNav h3 {
+    margin-top: 20px;
+  }
+  .contact .bottomNav .twitterWidget {
+    text-align: center;
+  }
+  .contact .bottomNav .socialLinks {
+    left: 42%;
+    bottom: -40px;
+  }
 }
