@@ -1,0 +1,134 @@
+@media (max-width: 1000px) {
+    .mainBlog {
+        h2 {
+            font-size: 2rem;
+            text-align: center;
+        }
+    }
+    .relatedPosts {
+        .gallery {
+            flex-direction: column;
+            align-items: center;
+            .post {
+                width:100%;
+                text-align: center;
+                img {
+                    width:70%;
+                    height:auto;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 800px) {
+    .pageLinks {
+        a {
+          margin-right:10px;
+        }
+    }
+    
+    .searchCart {
+        a,
+        .searchButtons {
+          margin-left:10px;
+        }
+    }
+
+    .mainBlog {
+        h2 {
+            font-size: 1.8rem;
+        }
+    }
+
+    .newComment {
+        form {
+            input[type="text"],
+            input[type="email"],
+            textarea {
+                font-size: 0.8rem;
+            }
+        }
+    }
+    .contact {
+        p {
+          font-size: 0.6rem;
+        }
+        a {
+          font-size: 0.6rem;
+        }  
+    }
+}
+
+@media (max-width: 500px) {
+    .pageLinks {
+        flex-direction: column;
+    }
+    .searchCart {
+        flex-direction: column;
+    }
+    .mainBlog {
+        h2 {
+            font-size: 1rem;
+        }
+        img {
+            width:80px;
+            height:80px;
+        }
+        .postInfoFlex {
+            .nameTitle{
+                margin-left: 5px;
+            }
+            .nameTitle,
+            .date,
+            .category,
+            .tags {
+                width:20%;
+            }
+        }
+    }
+    .relatedPosts{
+        .gallery {
+            .post{
+                width:100%;
+                img {
+                    width:100%;
+                }
+            }
+        }
+    }
+    .oldComments {
+        .commentImage {
+            img {
+                margin-right:15px;
+            }
+        }
+    }
+    .newComment {
+        form {
+            input[type="text"],
+            input[type="email"],
+            textarea {
+                font-size: 0.5rem;
+            }
+        }
+    }
+    .contact {
+        padding-bottom: 10%;
+        .bottomNav {
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            h3 {
+                margin-top: 20px;
+            }
+            .twitterWidget {
+                text-align: center;
+            }
+            .socialLinks {
+                left:42%;
+                bottom:-40px;
+            }
+        }
+    }
+}

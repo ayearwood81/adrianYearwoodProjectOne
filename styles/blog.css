@@ -400,6 +400,7 @@ header {
 .mainBlog h2 {
   text-transform: uppercase;
   font-size: 3rem;
+  text-align: center;
   line-height: normal;
   font-weight: bolder;
 }
@@ -628,4 +629,118 @@ footer {
   text-align: center;
   padding: 4% 0%;
   border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+@media (max-width: 1000px) {
+  .mainBlog h2 {
+    font-size: 2rem;
+    text-align: center;
+  }
+  .relatedPosts .gallery {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .relatedPosts .gallery .post {
+    width: 100%;
+    text-align: center;
+  }
+  .relatedPosts .gallery .post img {
+    width: 70%;
+    height: auto;
+  }
+}
+@media (max-width: 800px) {
+  .pageLinks a {
+    margin-right: 10px;
+  }
+  .searchCart a,
+.searchCart .searchButtons {
+    margin-left: 10px;
+  }
+  .mainBlog h2 {
+    font-size: 1.8rem;
+  }
+  .newComment form input[type=text],
+.newComment form input[type=email],
+.newComment form textarea {
+    font-size: 0.8rem;
+  }
+  .contact p {
+    font-size: 0.6rem;
+  }
+  .contact a {
+    font-size: 0.6rem;
+  }
+}
+@media (max-width: 500px) {
+  .pageLinks {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .searchCart {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .mainBlog h2 {
+    font-size: 1rem;
+  }
+  .mainBlog img {
+    width: 80px;
+    height: 80px;
+  }
+  .mainBlog .postInfoFlex .nameTitle {
+    margin-left: 5px;
+  }
+  .mainBlog .postInfoFlex .nameTitle,
+.mainBlog .postInfoFlex .date,
+.mainBlog .postInfoFlex .category,
+.mainBlog .postInfoFlex .tags {
+    width: 20%;
+  }
+  .relatedPosts .gallery .post {
+    width: 100%;
+  }
+  .relatedPosts .gallery .post img {
+    width: 100%;
+  }
+  .oldComments .commentImage img {
+    margin-right: 15px;
+  }
+  .newComment form input[type=text],
+.newComment form input[type=email],
+.newComment form textarea {
+    font-size: 0.5rem;
+  }
+  .contact {
+    padding-bottom: 10%;
+  }
+  .contact .bottomNav {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+  }
+  .contact .bottomNav h3 {
+    margin-top: 20px;
+  }
+  .contact .bottomNav .twitterWidget {
+    text-align: center;
+  }
+  .contact .bottomNav .socialLinks {
+    left: 42%;
+    bottom: -40px;
+  }
 }
