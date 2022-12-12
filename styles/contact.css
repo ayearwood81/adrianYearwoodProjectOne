@@ -661,3 +661,59 @@ footer {
     bottom: -40px;
   }
 }
+@media (max-width: 320px) {
+  .navBar {
+    position: relative;
+  }
+  .navBar .wrapper {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .navBar .wrapper .pageLinks {
+    position: absolute;
+    bottom: -50px;
+    left: 15px;
+  }
+  .navBar .wrapper .pageLinks a {
+    color: #ffffff;
+  }
+  .navBar .wrapper .searchCart {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    position: absolute;
+    bottom: -39px;
+    right: 15px;
+  }
+  .navBar .wrapper .searchCart a {
+    color: #ffffff;
+  }
+  .details .wrapper {
+    text-align: center;
+  }
+  .details .wrapper .detailsInfoFlex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .details .wrapper .detailsInfoFlex i {
+    margin-top: 20px;
+  }
+  .inTouch {
+    text-align: center;
+  }
+  .inTouch form input[type=text],
+.inTouch form input[type=email],
+.inTouch form textarea {
+    font-size: 0.45rem;
+  }
+  .contact {
+    padding-bottom: 15%;
+  }
+  .contact .contactInfo p {
+    font-size: 0.6rem;
+  }
+}

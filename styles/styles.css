@@ -819,3 +819,55 @@ footer {
     bottom: -40px;
   }
 }
+@media (max-width: 320px) {
+  .navBar {
+    position: relative;
+  }
+  .navBar .wrapper {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .navBar .wrapper .pageLinks {
+    position: absolute;
+    bottom: -50px;
+    left: 15px;
+  }
+  .navBar .wrapper .searchCart {
+    position: absolute;
+    bottom: -67px;
+    right: 15px;
+  }
+  .brandingDesign .brandingDesignImage img {
+    width: 100%;
+    height: auto;
+  }
+  .ecosystem .wrapper img {
+    width: 60%;
+    height: auto;
+  }
+  .ecosystem .wrapper .chevron {
+    height: 30px;
+    top: 70px;
+  }
+  .pointsOfDifference .wrapper {
+    width: 65%;
+  }
+  .dropLine {
+    height: auto;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .dropLine .dropLineInfo {
+    width: 100%;
+    padding: 10% 10%;
+  }
+  .dropLine img {
+    display: none;
+  }
+  .contact {
+    padding-bottom: 15%;
+  }
+}

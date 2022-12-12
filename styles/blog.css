@@ -744,3 +744,39 @@ footer {
     bottom: -40px;
   }
 }
+@media (max-width: 320px) {
+  .navBar {
+    position: relative;
+  }
+  .navBar .wrapper {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .navBar .wrapper .pageLinks {
+    position: absolute;
+    bottom: -50px;
+    left: 15px;
+  }
+  .navBar .wrapper .searchCart {
+    position: absolute;
+    bottom: -67px;
+    right: 15px;
+  }
+  .mainBlog .wrapper a,
+.mainBlog .wrapper p {
+    font-size: 0.65rem;
+  }
+  .mainBlog .wrapper .postInfoFlex .tags,
+.mainBlog .wrapper .postInfoFlex .category {
+    display: none;
+  }
+  .newComment form input[type=text],
+.newComment form input[type=email],
+.newComment form textarea {
+    font-size: 0.45rem;
+  }
+  .contact {
+    padding-bottom: 15%;
+  }
+}

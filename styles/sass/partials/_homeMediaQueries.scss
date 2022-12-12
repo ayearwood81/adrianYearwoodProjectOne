@@ -166,3 +166,61 @@
     }
   }
 }
+
+@media (max-width: 320px) {
+  .navBar {
+    position:relative;
+    .wrapper {
+      justify-content: center;
+      .pageLinks {
+        position:absolute;
+        bottom:-50px;
+        left:15px;
+      }
+      .searchCart {
+        position:absolute;
+        bottom: -67px;
+        right:15px;
+      }
+    }
+  }
+  .brandingDesign {
+    .brandingDesignImage {
+      img {
+        width:100%;
+        height:auto;
+      }
+    }
+  }
+  .ecosystem {
+    .wrapper {
+      img {
+        width:60%;
+        height:auto;
+      }
+      .chevron {
+        height:30px;
+        top:70px;
+      }
+    }
+  }
+  .pointsOfDifference {
+    .wrapper {
+      width:65%;
+    }
+  }
+  .dropLine {
+    height:auto;
+    flex-direction: column;
+    .dropLineInfo {
+      width:100%;
+      padding:10% 10%;
+    }
+    img {
+      display:none;
+    }
+  }
+  .contact {
+    padding-bottom:15%;
+  }
+}

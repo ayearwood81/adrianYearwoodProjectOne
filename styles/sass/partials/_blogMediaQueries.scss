@@ -132,3 +132,48 @@
         }
     }
 }
+
+@media (max-width: 320px) {
+    .navBar {
+        position:relative;
+        .wrapper {
+            justify-content: center;
+            .pageLinks {
+                position:absolute;
+                bottom:-50px;
+                left:15px;
+            }
+            .searchCart {
+                position:absolute;
+                bottom: -67px;
+                right:15px;
+            }
+        }
+    }
+    .mainBlog{
+        .wrapper {
+            a,
+            p {
+                font-size: 0.65rem;
+            }
+            .postInfoFlex {
+                .tags,
+                .category {
+                    display:none;
+                }
+            }
+        }
+    }
+    .newComment {
+        form {
+            input[type="text"],
+            input[type="email"],
+            textarea {
+                font-size: 0.45rem;
+            }
+        }
+    }
+    .contact {
+        padding-bottom: 15%;
+    }
+}
