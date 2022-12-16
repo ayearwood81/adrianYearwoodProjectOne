@@ -453,7 +453,7 @@ header {
 }
 .ecosystem .wrapper img {
   width: 225px;
-  height: auto;
+  height: 225px;
   border-radius: 50%;
   margin-bottom: 50px;
 }

@@ -15,6 +15,13 @@
     // create a new comment element with the information and append it to the old comments section
 
 
+    
+// setting a counter for the number of comments on the page
+let counter = document.querySelectorAll(`.commentImage`).length;
+console.log(counter);
+// displaying the number of comments on the page on refresh
+document.querySelector("#commentNumber").textContent = `${counter} comments`;
+
 // target the form
 const formElement = document.querySelector("form");
 
@@ -38,15 +45,13 @@ formElement.addEventListener("submit", function(event){
         const newComment = document.createElement("div");
         // give it the class of commentImage
         newComment.classList.add("commentImage");
-        // create the image (random image for now)
+        // create the image (placeholder for now - no image submission option)
         const image = document.createElement("img");
-        image.alt = "insert image here";
-        console.log(image);
-        // image.innerHTML = `<img src="../assets/blog-6.jpeg" alt="Daniel Vandaft">`;
+        image.alt = "new user";
         // add the image to the new comment section
         newComment.appendChild(image);
 
-        //add a new section for the comment info
+        // add a new section for the comment info
         const newCommentInfo = document.createElement("div");
         // give it the class of commentInfo
         newCommentInfo.classList.add("commentInfo");
@@ -84,13 +89,14 @@ formElement.addEventListener("submit", function(event){
         // add the commentinfo section to the new comment
         newComment.appendChild(newCommentInfo);
         
-        // selecting the parent element
-        const commentBox = document.querySelector("#commentWrapper");
+        // select the parent element and add the new comment to the page
+        document.querySelector("#commentWrapper").appendChild(newComment);
 
-        // adding the new comment to the page
-        commentBox.appendChild(newComment);
+        // increase the counter after a comment is added
+        counter++;
 
-        
+        // update the number at the top of the comment section
+        document.querySelector("#commentNumber").textContent = `${counter} comments`;
     // if the name, email, or comment is missing do not create a new comment and prompt the user to fix the problem
     } else if (comment == false) {
         alert("Missing Comment!");
