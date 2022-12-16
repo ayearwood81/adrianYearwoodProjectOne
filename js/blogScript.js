@@ -97,6 +97,12 @@ formElement.addEventListener("submit", function(event){
 
         // update the number at the top of the comment section
         document.querySelector("#commentNumber").textContent = `${counter} comments`;
+
+        // resetting the fields if a submission was successful
+        document.querySelector("input[name=name]").value = "";
+        document.querySelector("input[name=email]").value = "";
+        document.querySelector("input[name=subject]").value = "";
+        document.querySelector("textarea[name=comment]").value = "";
     // if the name, email, or comment is missing do not create a new comment and prompt the user to fix the problem
     } else if (comment == false) {
         alert("Missing Comment!");
