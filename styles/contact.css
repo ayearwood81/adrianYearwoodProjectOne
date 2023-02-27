@@ -567,8 +567,34 @@ footer {
 }
 
 @media (max-width: 800px) {
-  .pageLinks a {
+  .navBar {
+    position: relative;
+  }
+  .navBar .wrapper {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .navBar .wrapper .pageLinks {
+    position: absolute;
+    bottom: -50px;
+    left: 15px;
+  }
+  .navBar .wrapper .pageLinks a {
     margin-right: 10px;
+    color: #ffffff;
+  }
+  .navBar .wrapper .searchCart {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    position: absolute;
+    bottom: -39px;
+    right: 15px;
+  }
+  .navBar .wrapper .searchCart a {
+    color: #ffffff;
   }
   .searchCart a,
   .searchCart .searchButtons {
@@ -578,6 +604,9 @@ footer {
   .inTouch form input[type=email],
   .inTouch form textarea {
     font-size: 0.8rem;
+  }
+  .contact input {
+    width: 100px;
   }
 }
 @media (max-width: 500px) {
@@ -655,6 +684,9 @@ footer {
   }
   .contact .bottomNav .twitterWidget {
     text-align: center;
+  }
+  .contact .bottomNav .twitterWidget input {
+    width: auto;
   }
   .contact .bottomNav .socialLinks {
     left: 42%;

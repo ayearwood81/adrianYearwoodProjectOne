@@ -655,8 +655,30 @@ footer {
   }
 }
 @media (max-width: 800px) {
-  .pageLinks a {
+  .navBar {
+    position: relative;
+  }
+  .navBar .wrapper {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .navBar .wrapper .pageLinks {
+    position: absolute;
+    bottom: -50px;
+    left: 15px;
+  }
+  .navBar .wrapper .pageLinks a {
     margin-right: 10px;
+  }
+  .navBar .wrapper .searchCart {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    position: absolute;
+    bottom: -39px;
+    right: 15px;
   }
   .searchCart a,
   .searchCart .searchButtons {
@@ -664,6 +686,9 @@ footer {
   }
   .mainBlog h2 {
     font-size: 1.8rem;
+  }
+  .mainBlog .category {
+    display: none;
   }
   .newComment form input[type=text],
   .newComment form input[type=email],
@@ -675,6 +700,9 @@ footer {
   }
   .contact a {
     font-size: 0.6rem;
+  }
+  .contact input {
+    width: 100px;
   }
 }
 @media (max-width: 500px) {
@@ -701,10 +729,12 @@ footer {
     margin-left: 5px;
   }
   .mainBlog .postInfoFlex .nameTitle,
-  .mainBlog .postInfoFlex .date,
-  .mainBlog .postInfoFlex .category,
-  .mainBlog .postInfoFlex .tags {
+  .mainBlog .postInfoFlex .date {
     width: 20%;
+  }
+  .mainBlog .postInfoFlex .tags,
+  .mainBlog .postInfoFlex .category {
+    display: none;
   }
   .relatedPosts .gallery .post {
     width: 100%;
@@ -738,6 +768,9 @@ footer {
   }
   .contact .bottomNav .twitterWidget {
     text-align: center;
+  }
+  .contact .bottomNav .twitterWidget input {
+    width: auto;
   }
   .contact .bottomNav .socialLinks {
     left: 42%;

@@ -1,9 +1,28 @@
 @use "./variables" as *;
 
 @media (max-width: 800px) {
-    .pageLinks {
-        a {
-          margin-right:10px;
+    .navBar {
+        position:relative;
+        .wrapper {
+            justify-content: center;
+            .pageLinks {
+                position:absolute;
+                bottom:-50px;
+                left:15px;
+                a {
+                    margin-right:10px;
+                    color: $whiteOne;
+                }
+            }
+            .searchCart {
+                flex-direction: column-reverse;
+                position:absolute;
+                bottom: -39px;
+                right:15px;
+                a {
+                    color:$whiteOne;
+                }
+            }
         }
     }
     
@@ -22,7 +41,13 @@
                 font-size: 0.8rem;
             }
         }
-    }    
+    }
+    
+    .contact {
+        input {
+            width: 100px;
+        }  
+    }
 }
 
 @media (max-width: 500px) {
@@ -91,6 +116,9 @@
             }
             .twitterWidget {
                 text-align: center;
+                input {
+                    width: auto;
+                }
             }
             .socialLinks {
                 left:42%;
