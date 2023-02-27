@@ -412,6 +412,10 @@ header {
 }
 .brandingDesign .wrapper .brandingDesignImage {
   position: relative;
+  width: 90%;
+}
+.brandingDesign .wrapper .brandingDesignImage .mainImage {
+  width: 100%;
 }
 .brandingDesign .wrapper .brandingDesignImage .circleText {
   position: absolute;
@@ -679,11 +683,23 @@ footer {
 }
 
 @media (max-width: 800px) {
+  .pageLinks {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
   .pageLinks a {
     margin-right: 10px;
   }
+  .searchCart {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
   .searchCart a,
-.searchCart .searchButtons {
+  .searchCart .searchButtons {
     margin-left: 10px;
   }
   .brandingTextBox p {
@@ -726,19 +742,53 @@ footer {
   .contact a {
     font-size: 0.6rem;
   }
+  .contact input {
+    width: 150px;
+  }
+}
+@media (max-width: 650px) {
+  .ourTeam .wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .ourTeam .wrapper .teamPlayers {
+    width: 100%;
+    text-align: center;
+  }
+  .ourTeam .wrapper img {
+    width: 100%;
+    height: auto;
+  }
+  .ourTeam .wrapper .workFlex {
+    width: 100%;
+  }
+  .contact input {
+    width: 100px;
+  }
 }
 @media (max-width: 500px) {
-  .pageLinks {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+  .navBar {
+    position: relative;
   }
-  .searchCart {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+  .navBar .wrapper {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .navBar .wrapper .pageLinks {
+    position: absolute;
+    bottom: -50px;
+    left: 15px;
+  }
+  .navBar .wrapper .searchCart {
+    position: absolute;
+    bottom: -67px;
+    right: 15px;
   }
   .brandingDesign .wrapper .brandingDesignImage .circleText {
     width: 20%;
@@ -758,42 +808,29 @@ footer {
     width: 40%;
   }
   .pointsOfDifference .wrapper .podOne,
-.pointsOfDifference .wrapper .podThree,
-.pointsOfDifference .wrapper .podFive {
+  .pointsOfDifference .wrapper .podThree,
+  .pointsOfDifference .wrapper .podFive {
     display: none;
   }
   .pointsOfDifference .wrapper .pod {
     width: 100%;
   }
-  .ourTeam .wrapper {
+  .dropLine {
+    height: auto;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .ourTeam .wrapper .teamPlayers {
-    width: 100%;
-  }
-  .ourTeam .wrapper img {
-    width: 100%;
-    height: auto;
-  }
-  .ourTeam .wrapper .workFlex {
-    width: 100%;
-  }
-  .dropLine {
-    height: 300px;
   }
   .dropLine .dropLineInfo {
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
+    width: 100%;
+    padding: 10% 10%;
   }
   .dropLine .dropLineInfo p {
     margin: 10px;
+  }
+  .dropLine img {
+    display: none;
   }
   .contact {
     padding-bottom: 10%;
@@ -814,30 +851,15 @@ footer {
   .contact .bottomNav .twitterWidget {
     text-align: center;
   }
+  .contact .bottomNav .twitterWidget input {
+    width: auto;
+  }
   .contact .bottomNav .socialLinks {
     left: 42%;
     bottom: -40px;
   }
 }
 @media (max-width: 320px) {
-  .navBar {
-    position: relative;
-  }
-  .navBar .wrapper {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  .navBar .wrapper .pageLinks {
-    position: absolute;
-    bottom: -50px;
-    left: 15px;
-  }
-  .navBar .wrapper .searchCart {
-    position: absolute;
-    bottom: -67px;
-    right: 15px;
-  }
   .brandingDesign .brandingDesignImage img {
     width: 100%;
     height: auto;
@@ -852,20 +874,6 @@ footer {
   }
   .pointsOfDifference .wrapper {
     width: 65%;
-  }
-  .dropLine {
-    height: auto;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .dropLine .dropLineInfo {
-    width: 100%;
-    padding: 10% 10%;
-  }
-  .dropLine img {
-    display: none;
   }
   .contact {
     padding-bottom: 15%;

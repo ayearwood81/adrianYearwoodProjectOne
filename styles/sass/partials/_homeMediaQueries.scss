@@ -3,6 +3,10 @@
     a {
       margin-right:10px;
     }
+    flex-direction: column;
+  }
+  .searchCart {
+    flex-direction: column;
   }
 
   .searchCart {
@@ -67,15 +71,53 @@
     a {
       font-size: 0.6rem;
     }
+    input {
+      width:150px;
+    }
   }  
 }
-  
-@media (max-width: 500px) {
-  .pageLinks {
-    flex-direction: column;
+
+@media (max-width: 650px) {
+  .ourTeam {
+    .wrapper {
+      flex-direction: column;
+      align-items: center;
+      .teamPlayers {
+        width:100%;
+        text-align: center;
+      }
+      img {
+        width:100%;
+        height:auto;
+      }
+      .workFlex {
+        width:100%;
+      }
+    }
   }
-  .searchCart {
-    flex-direction: column;
+  .contact {
+    input {
+      width:100px;
+    }
+  }  
+}
+
+@media (max-width: 500px) {
+  .navBar {
+    position:relative;
+    .wrapper {
+      justify-content: center;
+      .pageLinks {
+        position:absolute;
+        bottom:-50px;
+        left:15px;
+      }
+      .searchCart {
+        position:absolute;
+        bottom: -67px;
+        right:15px;
+      }
+    }
   }
   .brandingDesign {
     .wrapper {
@@ -120,30 +162,18 @@
     }
   }
 
-  .ourTeam {
-    .wrapper {
-      flex-direction: column;
-      align-items: center;
-      .teamPlayers {
-        width:100%;
-      }
-      img {
-        width:100%;
-        height:auto;
-      }
-      .workFlex {
-        width:100%;
+  .dropLine {
+    height: auto;
+    flex-direction: column;
+    .dropLineInfo {
+      width:100%;
+      padding:10% 10%;
+      p {
+        margin: 10px;
       }
     }
-  }
-
-  .dropLine {
-    height: 300px;
-    .dropLineInfo {
-      justify-content: space-evenly;
-      p {
-        margin:10px;
-      }
+    img {
+      display:none;
     }
   }
 
@@ -158,6 +188,9 @@
       }
       .twitterWidget {
         text-align: center;
+        input {
+          width:auto;
+        }
       }
       .socialLinks {
         left:42%;
@@ -168,22 +201,6 @@
 }
 
 @media (max-width: 320px) {
-  .navBar {
-    position:relative;
-    .wrapper {
-      justify-content: center;
-      .pageLinks {
-        position:absolute;
-        bottom:-50px;
-        left:15px;
-      }
-      .searchCart {
-        position:absolute;
-        bottom: -67px;
-        right:15px;
-      }
-    }
-  }
   .brandingDesign {
     .brandingDesignImage {
       img {
@@ -207,17 +224,6 @@
   .pointsOfDifference {
     .wrapper {
       width:65%;
-    }
-  }
-  .dropLine {
-    height:auto;
-    flex-direction: column;
-    .dropLineInfo {
-      width:100%;
-      padding:10% 10%;
-    }
-    img {
-      display:none;
     }
   }
   .contact {

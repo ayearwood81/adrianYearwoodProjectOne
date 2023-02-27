@@ -571,12 +571,12 @@ footer {
     margin-right: 10px;
   }
   .searchCart a,
-.searchCart .searchButtons {
+  .searchCart .searchButtons {
     margin-left: 10px;
   }
   .inTouch form input[type=text],
-.inTouch form input[type=email],
-.inTouch form textarea {
+  .inTouch form input[type=email],
+  .inTouch form textarea {
     font-size: 0.8rem;
   }
 }
@@ -613,8 +613,8 @@ footer {
     line-height: normal;
   }
   .details .detailsInfoFlex .phone,
-.details .detailsInfoFlex .address,
-.details .detailsInfoFlex .emailDetails {
+  .details .detailsInfoFlex .address,
+  .details .detailsInfoFlex .emailDetails {
     text-align: center;
   }
   .inTouch {
@@ -630,8 +630,8 @@ footer {
     margin-bottom: 50px;
   }
   .inTouch form input[type=text],
-.inTouch form input[type=email],
-.inTouch form textarea {
+  .inTouch form input[type=email],
+  .inTouch form textarea {
     font-size: 0.5rem;
   }
   .bottomBanner {
@@ -706,8 +706,8 @@ footer {
     text-align: center;
   }
   .inTouch form input[type=text],
-.inTouch form input[type=email],
-.inTouch form textarea {
+  .inTouch form input[type=email],
+  .inTouch form textarea {
     font-size: 0.45rem;
   }
   .contact {

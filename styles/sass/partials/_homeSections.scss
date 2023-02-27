@@ -23,6 +23,10 @@ header {
         align-items: center;
         .brandingDesignImage {
             position:relative;
+            width:90%;
+            .mainImage {
+                width:100%;
+            }
             .circleText {
                 position:absolute;
                 width:40%;
